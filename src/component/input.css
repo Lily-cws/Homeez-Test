@@ -1,0 +1,59 @@
+html{    
+    height: 100vh;
+}
+
+body{
+    /* background-color: cyan; */
+    height: 100%;
+}
+
+
+.inputContainer {
+    text-align: center;
+    margin: 10px;
+    /* height: 700px; */
+    /* background-color: blue; */
+    
+  }
+
+  .formContainer {
+      display: block;
+      margin-top: 10px;
+      width: 80%;
+      /* background-color: red; */
+      align-items: center;
+      margin-right: auto;
+      margin-left: auto;
+      position: relative;
+  }
+  
+
+  textarea {
+    padding: 8px;
+    align-items: center;
+    width: 50%;
+    height: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    display: block;
+  }
+
+  button{
+    display: block;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+  }
+
+  .topright{
+    float: right;
+    margin: 10px;
+}
+
+  .listContainer{
+    background-color: yellow;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
