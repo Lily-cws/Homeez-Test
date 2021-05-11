@@ -66,9 +66,9 @@ function Input() {
   };
 
   return (
-    <div>
+    <div className="wrapContainer">
     <section className="listContainer">     
-    <button className="topright" onClick={handleClick}>Show all list</button>
+      <button className="topright" onClick={handleClick}>Show all list</button>
     </section>
     
     <section className="inputContainer">
@@ -77,8 +77,10 @@ function Input() {
       <form className="formContainer" onSubmit={handleSubmit}>
         {success ? <p>Quotation is submitted</p> : error ? <p>Quotation is not submitted</p> : <p></p>}
           <textarea type="text" placeholder="Enter the information here" value={tableInfo} onChange={handleChange} onFocus={handleFocus} disabled={isSubmitted} maxLength="255"></textarea>
-          <p>{characterCount}/255</p>          
+          <div className="btnWrap">
+          <p className="lightGray">{characterCount}/255</p>          
           <button disabled={isSubmitted || tableInfo === ""}>Submit</button>
+          </div>
       </form>
 
     </section>

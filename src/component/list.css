@@ -1,14 +1,19 @@
 html{    
     height: 100vh;
+    box-sizing: border-box;
 }
 
 body{
-    /* background-color: cyan; */
     height: 100%;
 }
 
+.wrapContainer {
+    display: flex;
+    flex-direction: column;
+}
+
 .listContainer{
-    display: block;
+    flex: 100%;
 }
 
 .topright{
@@ -17,10 +22,9 @@ body{
 }
 
 .tableContainer {
-    display: block;
+    flex: 100%;
     margin-top: 10px;
-    width: 80%;
-    /* background-color: red; */
+    width: 60%;
     align-items: center;
     text-align: center;
     margin-right: auto;
@@ -31,15 +35,33 @@ body{
 table{
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 10px;
     text-align: left;
     width: 100%;
 }
 
 th, td {
     border-bottom: 1px solid #ddd;
-    width: auto ;
-    height: auto ;
+    width: auto;
+    height: auto;
+    padding: 6px;
   }
 
   tr:hover {background-color: #f5f5f5;}
+
+
+  /* Media Query: Large Smartphone * 600px and down*/
+@media screen and (max-width: 600px){
+    .tableContainer {
+        width: 80%;
+    }
+}
+
+/* Media Query: screen from 600px to 768px*/
+@media (min-width: 600px)  and (max-width: 768px){
+
+    .tableContainer {
+        width: 60%;
+    }
+
+}

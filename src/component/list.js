@@ -30,7 +30,7 @@ function List() {
    },[]);
 
     return (
-      <div>
+      <div className="wrapContainer">
         <section className="listContainer">     
                 <button className="topright" onClick={handleClick}>Quotation Table</button>
         </section>
@@ -41,7 +41,7 @@ function List() {
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Description</th>
+                        <th>Information</th>
                     </tr>
                 </thead>
                 <tbody>

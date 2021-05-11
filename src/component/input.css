@@ -1,5 +1,6 @@
 html{    
     height: 100vh;
+    box-sizing: border-box;
 }
 
 body{
@@ -7,11 +8,24 @@ body{
     height: 100%;
 }
 
+.wrapContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.topright{
+  float: right;
+  margin: 10px;
+}
+
+.listContainer{
+  /* background-color: yellow; */
+  margin-top: 20px;
+}
 
 .inputContainer {
     text-align: center;
     margin: 10px;
-    /* height: 700px; */
     /* background-color: blue; */
     
   }
@@ -39,6 +53,22 @@ body{
     display: block;
   }
 
+
+  .btnWrap {
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+    width: 50%;
+    /* background-color: purple; */
+  }
+
+  .lightGray {
+    font-size: 0.8rem;
+    color: #696969;
+  }
+  
   button{
     display: block;
     align-items: center;
@@ -47,13 +77,25 @@ body{
     margin-top: 10px;
   }
 
-  .topright{
-    float: right;
-    margin: 10px;
+
+    /* Media Query: Large Smartphone * 600px and down*/
+@media screen and (max-width: 600px){
+    .formContainer {
+      width: 90%;
+  }
+
+    textarea {
+      width: 100%;
+    }
 }
 
-  .listContainer{
-    background-color: yellow;
-    margin-top: 20px;
-    margin-bottom: 20px;
+/* Media Query: screen from 600px to 768px*/
+@media (min-width: 600px)  and (max-width: 768px){
+    .formContainer {
+      width: 90%;
+  }
+
+    textarea {
+      width: 80%;
+    }
 }
