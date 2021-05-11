@@ -4,9 +4,39 @@ html{
 
 body{
     height: 100%;
+    background-color: blue;
 }
 
 .container{
-    height: 100%;
-    text-align: center;
+    /* text-align: center; */
+    background-color: yellow;
+    width: auto;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.container h1{
+    font-size: 50px;
+    margin-top: 0px;
+}
+
+/* Media Query: Large Smartphone * 600px and down*/
+@media screen and (max-width: 600px){
+    .container h1{
+        font-size: 20px;
+        margin-top: 0px;
+    }
+}
+
+/* Media Query: screen from 600px to 768px*/
+@media (min-width: 600px)  and (max-width: 768px){
+    .container h1{
+        font-size: 35px;
+        margin-top: 0px;
+    }
 }

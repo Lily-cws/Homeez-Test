@@ -6,11 +6,11 @@ function PageNotFound() {
 
     const history = useHistory()
     function handleClick(){
-     history.push("/");
+    history.push("/");
    }
     return (
       <section className="container">     
-            <h1>Page Not Found</h1>
+            <h1 >404: Page Not Found</h1>
             <button onClick={handleClick}>Quotation Table</button>
       </section>
     );
