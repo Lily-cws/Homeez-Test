@@ -40,7 +40,7 @@ function Input() {
     setError(false)
     try {
       const body = {x_tableinfo: tableInfo};
-      const response = await fetch("http://localhost:8080/updateinformation",{
+      const response = await fetch("http://13.229.141.110:8080/updateinformation",{
         method: 'POST', 
         headers: {
           'Content-Type': 'application/json'

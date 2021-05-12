@@ -13,7 +13,7 @@ function List() {
 
    const getAllInfo = async()=>{
        try {
-        const response = await fetch("http://localhost:8080/getallinformation") 
+        const response = await fetch("http://13.229.141.110:8080/getallinformation") 
         const jsonData = await response.json();
         
         console.log(jsonData);
