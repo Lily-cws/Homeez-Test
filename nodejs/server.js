@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const port = 8080;
-const hostname = "localhost";
 const cors = require("cors");
 const pool = require("../database/database");
 
@@ -12,8 +11,8 @@ app.use(cors());
 app.use(express.json());
 
 
-app.listen(port,hostname,()=>{
-    console.log(`Server started and accessible via http://${hostname}:${port}/`);
+app.listen(port,()=>{
+    console.log(`Server started and accessible via port ${port}/`);
 });
 
 
