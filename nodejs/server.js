@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 5000;
+const port = 8080;
 const hostname = "localhost";
 const cors = require("cors");
 const pool = require("../database/database");
